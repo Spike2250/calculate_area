@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "calc_area"
+version = "0.1.0"
+description = ""
+authors = ["Spike2250 <shilov.spike2250@yandex.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+prompt = "^0.4.1"
+rich = "^13.7.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start-app = "calc_area.scripts.start_app:main"
